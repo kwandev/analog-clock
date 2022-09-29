@@ -1,0 +1,9 @@
+@charset 'utf-8';
+
+/**
+  px to rem
+  px 사이즈 입력시 16px 기준 rem으로 변환
+*/
+@function px($value: 16) {
+  @return calc($value / 10) * 0.625rem;
+}
